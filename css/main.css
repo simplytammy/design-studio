@@ -18,6 +18,16 @@ Resusbale Classes
 .section {
   padding: 5em 0;
 }
+
+.call-btn-holder {
+  position: absolute;
+  top: 1em;
+  right: 5em;
+}
+.call-btn-holder a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
 /*========
 Sidebar
 ========*/
