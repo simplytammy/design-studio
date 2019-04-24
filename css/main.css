@@ -22,11 +22,30 @@ Resusbale Classes
 .call-btn-holder {
   position: absolute;
   top: 1em;
-  right: 5em;
+  right: 104px;
+  z-index: 9999999;
 }
 .call-btn-holder a {
   color: #FFFFFF;
   text-decoration: none;
+}
+.title {
+  font-size: 44px;
+  line-height: 1.5em;
+}
+.sub-title {
+  font-size: 19px;
+  line-height: 1em;
+  font-family:'Avenir LT Std 55 Roman' !important;
+}
+.design-btn {
+  background: #F28C32;
+  color: #FFFFFF;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+.design-btn:hover {
+  color: #FFFFFF;
 }
 /*========
 Sidebar
@@ -98,7 +117,7 @@ Main Content
   height: 100%;
   width: 75%;
   color: #FFFFFF;
-  padding:0 73px;
+  
 }
 @media (max-width:960px) {
   #mainContent {
@@ -107,7 +126,7 @@ Main Content
   }
 }
 .main {
-
+  padding:0 73px;
 }
 .main .intro {
   min-height: 60vh;
@@ -129,14 +148,8 @@ Main Content
   font-weight:normal;
   word-spacing: 2em;
 }
-.main .intro .intro-content .intro-btn {
-  background: #F28C32;
-  color: #FFFFFF;
-  border-radius: 20px;
-
-}
 .intro .intro--social {
-  text-align: right;
+  text-align: center;
 }
 .intro .intro--social ul {
   list-style: none;
@@ -159,4 +172,109 @@ Main Content
   font-weight:lighter;
   line-height: 20px;
   text-align: left;
+}
+
+/*========
+Our Work
+========*/
+.gallery-item {
+  position: relative;
+  padding:0 !important
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+  height: 33.3vh;
+}
+.gallery-item .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: .5;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+/*========
+Contact us
+========*/
+.contact-area {
+  min-height: 100vh;
+  padding: 94px 73px;
+}
+.contact-area .form-area {
+  padding: 52px 0;
+}
+.contact-area .form-area .contact-form .form-group .label {
+  font-size: 15px;
+}
+.contact-area .form-area .contact-form .form-group .sub-label {
+  font-size: 12px;
+}
+.contact-area .form-area .contact-form .form-group .form-field {
+  width: 100%;
+  background: #152A60;
+  padding: 8px;
+  border:none;
+  color:#FFFFFF;
+}
+.contact-area .form-area .contact-form .form-group .form-field:focus {
+  outline: none;
+}
+.contact-area .form-area .contact-form .form-group  [type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+.contact-area .form-area .contact-form .form-group  [type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label
+{
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #FFFFFF;
+}
+.contact-area .form-area .contact-form .form-group  [type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #FFFFFF;
+    border-radius: 0;
+}
+.contact-area .form-area .contact-form .form-group  [type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #FFFFFF;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    border-radius: 0;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.contact-area .form-area .contact-form .form-group  [type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+.contact-area .form-area .contact-form .form-group [type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.contact-area .form-area .contact-form .design-btn {
+  padding: 10px 50px;
 }
