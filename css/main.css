@@ -14,6 +14,7 @@ Resusbale Classes
 
 .active {
   border-right: 5px solid #F28C32;
+ 
 }
 
 .section {
@@ -115,7 +116,6 @@ Sidebar
 }
 
 .sidebar .sidebar--links {
-  color: #FFF;
   width: 100%;
   height: 100%;
 
@@ -139,9 +139,12 @@ Sidebar
   text-decoration: none !important;
   text-transform: uppercase;
   font-weight: 900;
+  opacity: .8;
 
 }
-
+.sidebar .sidebar--links ul li.active  a {
+  opacity: 1;
+}
 @media (max-width:960px) {
   #sideNav {
     display: none;
@@ -273,7 +276,13 @@ Main Content
 
 .section .vision, 
 .section .company {
+  margin: 20px 10px !important;
+}
+@media (max-width:960px) {
+  .section .vision, 
+.section .company {
   margin: 20px 0 !important;
+}
 }
 /*========
 Our Work
