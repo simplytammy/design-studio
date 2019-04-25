@@ -83,7 +83,6 @@ Resusbale Classes
   margin: 0 !important;
   padding: 0 !important;
 }
-
 /*========
 Sidebar
 ========*/
@@ -95,6 +94,7 @@ Sidebar
   height: 100%;
   padding: 0 !important;
   overflow: auto;
+  transition:1s ease;
 }
 
 .sidebar {
@@ -145,9 +145,27 @@ Sidebar
 .sidebar .sidebar--links ul li.active  a {
   opacity: 1;
 }
+.main-nav {
+  padding:.5em 0 1em 0;
+}
+.main-nav .control{
+  display:none;
+}
+#sidebar-toggle {
+  z-index: 999;
+  padding: 14px 0 14px 5px;
+}
+.nav-active {
+  width:70% !important;
+}
 @media (max-width:960px) {
   #sideNav {
-    display: none;
+    position: absolute;
+    width:0;
+    z-index: 99;
+  }
+  .main-nav .control{
+    display:block;
   }
 }
 
