@@ -11,32 +11,30 @@ body {
 /*========
 Resusbale Classes
 ========*/
-
 .active {
-  border-right: 5px solid #F28C32;
- 
+  border-right: 6px solid #F28C32;
 }
 
 .section {
-  padding: 5em 0;
+  padding: 2em 0;
 }
 
 @media (max-width:960px) {
   .section {
-    padding: 2em 0;
+    padding: 2em 1em;
   }
 }
 
 .call-btn-holder {
   position: absolute;
   top: 1em;
-  right: 104px;
+  right: 78px;
   z-index: 9999999;
 }
 
 @media (max-width:960px) {
   .call-btn-holder {
-    top:2em;
+    top: 2em;
     right: 2em;
   }
 }
@@ -56,15 +54,16 @@ Resusbale Classes
   line-height: 1em;
   font-family: 'Avenir LT Std 55 Roman' !important;
 }
+
 @media (max-width:960px) {
   .title {
     font-size: 30px;
     line-height: 1em;
   }
-  
+
   .sub-title {
     font-size: 15px;
-    line-height:1em;
+    line-height: 1em;
     font-family: 'Avenir LT Std 55 Roman' !important;
   }
 }
@@ -72,8 +71,9 @@ Resusbale Classes
 .design-btn {
   background: #F28C32;
   color: #FFFFFF;
-  border-radius: 20px;
-  padding: 10px 20px;
+  border-radius: 59px;
+  font-size:14px;
+  padding: 11px 28px;
 }
 
 .design-btn:hover {
@@ -84,23 +84,24 @@ Resusbale Classes
   margin: 0 !important;
   padding: 0 !important;
 }
+
+
+
 /*========
 Sidebar
 ========*/
-
 #sideNav {
   background-color: #10255A;
-  width: 25%;
+  max-width: 20%;
   position: fixed;
   height: 100%;
   padding: 0 !important;
   overflow: auto;
-  transition:1s ease;
+  transition: 1s ease;
 }
 
 .sidebar {
   display: block;
-
 }
 
 .sidebar .sidebar--logo {
@@ -108,7 +109,6 @@ Sidebar
   display: inline-block;
   display: flex;
   justify-content: center;
-
 }
 
 .sidebar .sidebar--logo img {
@@ -119,7 +119,6 @@ Sidebar
 .sidebar .sidebar--links {
   width: 100%;
   height: 100%;
-
 }
 
 .sidebar .sidebar--links ul {
@@ -132,7 +131,6 @@ Sidebar
   line-height: 4em;
   font-size: 15px;
   text-align: left;
-
 }
 
 .sidebar .sidebar--links ul li a {
@@ -141,65 +139,73 @@ Sidebar
   text-transform: uppercase;
   font-weight: 900;
   opacity: .8;
+}
+.sidebar .sidebar--links ul li a:hover {
+  color: #FFFFFF;
+  opacity: 1;
 
 }
-.sidebar .sidebar--links ul li.active  a {
+
+.sidebar .sidebar--links ul li.active a {
   opacity: 1;
 }
+
 .main-nav {
-  padding:.5em 0 1em 0;
+  padding: 0;
+}
+
+.main-nav .control {
   display: none;
 }
-.main-nav .control{
-  display:none;
-}
+
 #sidebar-toggle {
   z-index: 999;
   padding: 14px 0 14px 5px;
 }
+
 .nav-active {
-  width:70% !important;
+  width: 70% !important;
+  max-width:70% !important;;
 }
+
 @media (max-width:960px) {
   #sideNav {
     position: absolute;
-    width:0;
+    width: 0;
     z-index: 99;
   }
+
   .main-nav {
-    padding:.5em 0 1em 0;
+    padding: .5em 0 1em .6em;
     display: block;
   }
-  .main-nav .control{
-    display:block;
+
+  .main-nav .control {
+    display: block;
   }
 }
 
 /*========
 Main Content
 ========*/
-
 #mainContent {
   position: absolute;
-  left: 25%;
+  left:20%;
   height: 100%;
-  overflow: hidden;
-  width: 75%;
+  max-width: 80%;
   color: #FFFFFF;
-
 }
 
 @media (max-width:960px) {
   #mainContent {
-    width: 100%;
-    overflow: auto;
+    max-width: 100%;
+    overflow-x: hidden;
     left: 0;
   }
 }
 
 .main {
   padding: 0 73px;
-
 }
 
 @media (max-width:960px) {
@@ -213,7 +219,7 @@ Main Content
   position: relative;
   display: flex;
   align-items: flex-end;
-  padding: 6em 0;
+  padding: 6em 1em;
 }
 
 .main .intro .intro-content {
@@ -233,13 +239,12 @@ Main Content
 }
 
 .intro .intro--social {
-  text-align: center;
+  text-align: right;
 }
-
+ 
 .intro .intro--social ul {
   list-style: none;
   padding: 0 !important;
-
 }
 
 .intro .intro--social ul li a {
@@ -289,6 +294,7 @@ Main Content
 
 .section h3 {
   font-size: 22px !important;
+  line-height: 2em;
 }
 
 .section p {
@@ -296,18 +302,26 @@ Main Content
   font-weight: lighter;
   line-height: 20px;
   text-align: left;
+  color:#CDCDCD;
 }
 
-.section .vision, 
+.section .vision,
 .section .company {
   margin: 20px 10px !important;
 }
+.section .vision h3 span,
+.section .company  h3 span {
+  padding-left:1em;
+}
+
 @media (max-width:960px) {
-  .section .vision, 
-.section .company {
-  margin: 20px 0 !important;
+
+  .section .vision,
+  .section .company {
+    margin: 20px 0 !important;
+  }
 }
-}
+
 /*========
 Our Work
 ========*/
@@ -320,7 +334,7 @@ Our Work
   display: block;
   width: 100%;
   height: 33.3vh;
-  object-fit:cover;
+  object-fit: cover;
 }
 
 .gallery-item .overlay {
@@ -332,19 +346,21 @@ Our Work
   height: 100%;
   width: 100%;
   opacity: .5;
-  transition: .5s ease;
-  background-color: #008CBA;
+  transition: .9s ease;
+  background-color: rgba(16, 37, 90, 1);
+}
+.gallery-item .overlay:hover {
+  background-color: transparent;
+
 }
 
 /*========
 Contact us
 ========*/
 .contact-area {
-  min-height: 100vh;
-  padding: 94px 73px;
+    height: 100%;
+    padding: 80px 73px;
 }
-
-
 
 .contact-area .form-area {
   padding: 52px 0;
@@ -425,23 +441,26 @@ Contact us
 }
 
 .contact-area .form-area .contact-form .design-btn {
-  padding: 10px 50px;
+  padding: 11px 54px !important;
 }
+
 @media (max-width:960px) {
   .contact-area .form-area {
-    padding:26px 0;
+    padding: 26px 0;
   }
+
   .contact-area {
     min-height: 100vh;
     padding: 94px 10px;
   }
+
   .contact-area .form-area .contact-form .form-group [type="radio"]:checked+label,
-[type="radio"]:not(:checked)+label {
-  position: relative;
-  padding-left: 28px;
-  cursor: pointer;
-  line-height: 20px;
-  display: block;
-  color: #FFFFFF;
-}
+  [type="radio"]:not(:checked)+label {
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: block;
+    color: #FFFFFF;
+  }
 }
