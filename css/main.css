@@ -33,7 +33,7 @@ Resusbale Classes
 .call-btn-holder {
   position: absolute;
   top: 1em;
-  right: 78px;
+  right: 90px;
   z-index: 9999999;
 }
 
@@ -266,6 +266,7 @@ Main Content
   border-radius: 10px;
   transition: .8s ease;
 }
+.intro .intro--social ul li a i {font-size: 18px;}
 .intro .intro--social ul li a:hover {
     background: #1A2D65;
 }
