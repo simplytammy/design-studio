@@ -11,6 +11,11 @@ body {
 /*========
 Resusbale Classes
 ========*/
+
+.cp-lr {
+  padding-left: .8em !important;
+  padding-right:1em !important;
+}
 .active {
   border-right: 6px solid #F28C32;
 }
@@ -47,6 +52,7 @@ Resusbale Classes
 .title {
   font-size: 44px;
   line-height: 1.5em;
+  font-family: 'Avenir LT Std 85 Heavy' !important;
 }
 
 .sub-title {
@@ -75,10 +81,12 @@ Resusbale Classes
   border-radius: 59px;
   font-size:14px;
   padding: 11px 28px;
+  transition: all .8s ease;
 }
 
 .design-btn:hover {
   color: #FFFFFF;
+  opacity:.7;
 }
 
 .clear {
@@ -216,11 +224,11 @@ Main Content
 }
 
 .main .intro {
-  min-height: 60vh;
+  min-height: 70vh;
   position: relative;
   display: flex;
-  align-items: flex-end;
-  padding: 6em 1em;
+  align-items: center;
+  padding-top: 100px;
 }
 
 .main .intro .intro-content {
@@ -241,8 +249,9 @@ Main Content
 
 .intro .intro--social {
   text-align: right;
+  padding-right: 20px;
 }
- 
+
 .intro .intro--social ul {
   list-style: none;
   padding: 0 !important;
@@ -252,10 +261,13 @@ Main Content
   line-height: 4em;
   color: #FFFFFF;
   background: #0E2054;
-  padding: 8px 12px;
-  border-radius: 5px;
+  padding: 10px 12px 8px 12px;
+  border-radius: 10px;
+  transition: .8s ease;
 }
-
+.intro .intro--social ul li a:hover {
+    background: #1A2D65;
+}
 @media (max-width:960px) {
   .main .intro {
     min-height: 50vh;
