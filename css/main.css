@@ -11,7 +11,26 @@ body {
 /*========
 Resusbale Classes
 ========*/
+.arrow-right {
+  position: absolute;
+  right:5px;
+  top:25%;
 
+}
+.arrow-right i {
+  color:#3178E2;
+  font-size: 26px;
+}
+
+@media (max-width:960px) {
+  .arrow-right {
+    position: relative;
+    display:flex;
+    justify-content: center;
+    transform: rotate(90deg);
+    margin-bottom:40px;
+  }
+}
 .cp-lr {
   padding-left: .8em !important;
   padding-right:1em !important;
@@ -491,8 +510,6 @@ Design process
 }
 
 .design-p-intro .design-process .d-icon {
-  height: 106px;
-  width:106px;
   margin: 10px auto;
 }
 
